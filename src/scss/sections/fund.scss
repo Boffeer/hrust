@@ -118,6 +118,12 @@
   height: 82px;
   fill: #fff;
 }
+.stream-channel__icon:hover {
+  @media (any-hover: hover) {
+    fill: #000;
+  }
+}
+
 .stream__video {
   max-width: 1620px;
   height: 833px;

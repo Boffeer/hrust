@@ -1,7 +1,10 @@
 .teams {
+  position: relative;
+  z-index: 2;
   padding-top: 224px;
   padding-bottom: 189px;
   margin-top: -160px;
+  clip-path: polygon(0 0%, 100% 0%, 100% 86%, 0% 97%);
   background-color: #000;
   background-image: url("../img/teams/teams-bg.jpg");
   background-repeat: no-repeat;

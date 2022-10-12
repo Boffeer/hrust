@@ -33,6 +33,14 @@
   margin-right: 27px;
   margin-left: 27px;
 }
+.footer__socials .socials__icon {
+  fill: #fff;
+}
+.footer__socials .socials__icon:hover {
+  @media (any-hover: hover) {
+    fill: #ff0000;
+  }
+}
 
 .footer__copy {
   font-family: "Inter", sans-serif;

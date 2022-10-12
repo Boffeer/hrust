@@ -1,11 +1,30 @@
 .about {
+  position: relative;
+  z-index: 3;
   padding-top: 150px;
   padding-bottom: 231px;
+  clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0% 88%);
   background: linear-gradient(
     180deg,
     rgba(125, 11, 0, 0.5) 18.2%,
     #c81200 76.03%
   );
+}
+.about::before {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  left: 0;
+  display: block;
+  width: 92%;
+  height: 390px;
+  margin-right: auto;
+  margin-left: auto;
+  pointer-events: none;
+  content: "";
+  background-image: url("../img/common/arrow-bg.svg");
+  background-position: left top;
+  transform: rotate(356deg);
 }
 .about__container {
   max-width: 1800px;
@@ -30,7 +49,8 @@
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 60%;
+  height: 75%;
+  clip-path: polygon(0 1%, 98% 12%, 100% 100%, 1% 100%);
   content: "";
   background: rgba(0, 0, 0, 0.2);
 }
@@ -62,6 +82,8 @@
   padding: 33px;
   margin-right: auto;
   margin-left: auto;
+  clip-path: polygon(0 9%, 100% 0%, 96% 100%, 2% 100%);
+  clip-path: polygon(0 2%, 100% 0%, 96% 100%, 2% 100%);
   font-family: "Inter", sans-serif;
   font-size: 35px;
   font-style: normal;
@@ -69,8 +91,17 @@
   line-height: 42px;
   color: #ffffff;
   text-align: center;
+  background-color: transparent;
   background-image: url("../img/common/button.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition: all 0.3s;
+}
+
+.about-card__button:hover {
+  @media (any-hover: hover) {
+    color: #000;
+    background-color: #fff;
+  }
 }
