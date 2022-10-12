@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Главная</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -12,92 +12,512 @@
       @@include('tpls/header.html',{})
 
       <main class="main">
-        <div class="timer__wrapper hero__timer">
-          <div class="timer b_timer">
-            <div class="timer__left timer__section">
-              <span class="timer__digit">7</span>
-              <span class="timer__digit">1</span>
+        <section class="hero">
+          <div class="container hero__container">
+            <div class="hero__figure">
+              <picture class="hero__pic">
+                <!-- <source srcset="./img/hero/hand.webp" type="image/webp" /> -->
+                <img class="hero__img" src="./img/hero/hand.png" alt="" />
+              </picture>
+              <a
+                href="https://hrusteam.by"
+                target="_blank"
+                class="button button hero__button"
+                >наши другие вкусы</a
+              >
             </div>
-            :
-            <div class="timer__center timer__section">
-              <span class="timer__digit">5</span>
-              <span class="timer__digit">9</span>
-            </div>
-            :
-            <div class="timer__right timer__section">
-              <span class="timer__digit">5</span>
-              <span class="timer__digit">9</span>
+            <div class="hero-offer">
+              <div class="hero-offer__date">
+                <picture class="hero-offer__date-pic">
+                  <!-- <source
+                    srcset="./img/hero/hero-date.webp"
+                    type="image/webp"
+                  /> -->
+                  <img
+                    class="hero-offer__date-img"
+                    src="./img/hero/hero-date.png"
+                    alt=""
+                  />
+                </picture>
+              </div>
+              <div class="hero-offer__title">
+                <picture class="hero-offer__title-pic">
+                  <!-- <source srcset="./img/hero/9000.webp" type="image/webp" /> -->
+                  <img
+                    class="hero-offer__title-img"
+                    src="./img/hero/9000.png"
+                    alt=""
+                  />
+                </picture>
+              </div>
+              <h2 class="section-title hero-offer__subtitle">
+                Турнир по CS:GO
+              </h2>
+              <p class="hero-offer__desc">
+                Играй и заряжайся на перерывах с ХрусTeam! В самой сложной катке
+                иногда помочь может только "супербустер"... Знакомо, правда?
+                Здесь не обойтисьбез небольшого перерыва для прилива сил, мощи и
+                максимальной энергии.
+              </p>
+              <p class="hero-offer__desc">
+                #ПерерывсХрусTeam выведет тебя на новый уровень! Подкрепись
+                сухариками с яркими вкусами и возвращайся за победой в турнире!
+              </p>
+              <div class="hero-offer__logos">
+                <picture class="hero-offer__logo-pic">
+                  <!-- <source srcset="./img/hero/.webp" type="image/webp" /> -->
+                  <img
+                    class="hero-offer__logo-img"
+                    src="./img/hero/csgo.png"
+                    alt=""
+                  />
+                </picture>
+                <picture class="hero-offer__logo-pic">
+                  <!-- <source srcset="./img/hero/.webp" type="image/webp" /> -->
+                  <img
+                    class="hero-offer__logo-img"
+                    src="./img/hero/hero-logo.png"
+                    alt=""
+                  />
+                </picture>
+              </div>
             </div>
           </div>
-          <picture class="picture timer__pic">
-            <img src="" alt="Timer" class="timer__img" />
-          </picture>
-        </div>
+        </section>
+        <section class="fund">
+          <div class="container fund__container"></div>
+        </section>
+        <section class="fund">
+          <div class="container fund__container">
+            <h2 class="section-title fund__title">Призовой фонд</h2>
+            <div class="fund__cup">
+              <picture class="fund__pic">
+                <!-- <source data-srcset="./img/fund/cup.webp," type="image/webp" /> -->
+                <img
+                  class="fund__img lazy"
+                  data-src="./img/fund/cup.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <div class="fund__cards">
+              <article class="fund-card">
+                <h3 class="fund-card__heading">1 место</h3>
+                <picture class="fund-card__pic">
+                  <!-- <source
+                    data-srcset="./img/fund/5000.webp,"
+                    type="image/webp"
+                  /> -->
+                  <img
+                    class="fund-card__img lazy"
+                    data-src="./img/fund/5000.png"
+                    alt=""
+                  />
+                </picture>
+              </article>
+              <article class="fund-card">
+                <h3 class="fund-card__heading">3 место</h3>
+                <picture class="fund-card__pic">
+                  <!-- <source
+                    data-srcset="./img/fund/1000.webp,"
+                    type="image/webp"
+                  /> -->
+                  <img
+                    class="fund-card__img lazy"
+                    data-src="./img/fund/1000.png"
+                    alt=""
+                  />
+                </picture>
+              </article>
+              <article class="fund-card">
+                <h3 class="fund-card__heading">2 место</h3>
+                <picture class="fund-card__pic">
+                  <!-- <source
+                    data-srcset="./img/fund/2500.webp,"
+                    type="image/webp"
+                  /> -->
+                  <img
+                    class="fund-card__img lazy"
+                    data-src="./img/fund/2500.png"
+                    alt=""
+                  />
+                </picture>
+              </article>
+              <article class="fund-card">
+                <h3 class="fund-card__heading">4 место</h3>
+                <picture class="fund-card__pic">
+                  <!-- <source
+                    data-srcset="./img/fund/500.webp,"
+                    type="image/webp"
+                  /> -->
+                  <img
+                    class="fund-card__img lazy"
+                    data-src="./img/fund/500.png"
+                    alt=""
+                  />
+                </picture>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="stream">
+          <div class="container stream__container">
+            <h2 class="section-title stream__title">Смотри онлайн</h2>
+            <div class="stream__channels">
+              <button class="stream-channel">
+                <svg class="stream-channel__icon">
+                  <use xlink:href="./img/common/twitch.svg#twitch" />
+                </svg>
+              </button>
+              <button class="stream-channel">
+                <svg class="stream-channel__icon">
+                  <use xlink:href="./img/common/vk.svg#vk" />
+                </svg>
+              </button>
+            </div>
+            <div class="stream__video">
+              <iframe src="" frameborder="0"></iframe>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="container about__container">
+            <h2 class="section-title about__title">
+              Турнир проходит <br />
+              с 10 по 23 октября
+            </h2>
+            <article class="about-card">
+              <picture class="about-card__pic">
+                <!-- <source
+                  data-srcset="./img/about/keyboard.webp,"
+                  type="image/webp"
+                /> -->
+                <img
+                  class="about-card__img lazy"
+                  data-src="./img/about/keyboard.png"
+                  alt=""
+                />
+              </picture>
+              <h3 class="about-card__title">Про турнир</h3>
+              <button class="button about-card__button" data-poppa-open="rules">
+                Регламент турнира
+              </button>
+            </article>
+          </div>
+        </section>
+        <section class="teams">
+          <div class="container teams__container">
+            <h2 class="section-title teams__title">Команды - хэдлайнеры</h2>
+            <div class="teams__gallery">
+              <a href="#" class="teams-card">
+                <picture class="teams-card__pic">
+                  <!-- <source data-srcset="./img/teams/ninepandas.webp," type="image/webp" /> -->
+                  <img
+                    class="teams-card__img lazy"
+                    data-src="./img/teams/ninepandas.png"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <a href="#" class="teams-card">
+                <picture class="teams-card__pic">
+                  <!-- <source data-srcset="./img/teams/fg.webp," type="image/webp" /> -->
+                  <img
+                    class="teams-card__img lazy"
+                    data-src="./img/teams/fg.png"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <a href="#" class="teams-card">
+                <picture class="teams-card__pic">
+                  <!-- <source data-srcset="./img/teams/insilio.webp," type="image/webp" /> -->
+                  <img
+                    class="teams-card__img lazy"
+                    data-src="./img/teams/insilio.png"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <a href="#" class="teams-card">
+                <picture class="teams-card__pic">
+                  <!-- <source data-srcset="./img/teams/vp.webp," type="image/webp" /> -->
+                  <img
+                    class="teams-card__img lazy"
+                    data-src="./img/teams/vp.png"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <a href="#" class="teams-card">
+                <picture class="teams-card__pic">
+                  <!-- <source data-srcset="./img/teams/tag.webp," type="image/webp" /> -->
+                  <img
+                    class="teams-card__img lazy"
+                    data-src="./img/teams/tag.png"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <a href="#" class="teams-card">
+                <picture class="teams-card__pic">
+                  <!-- <source data-srcset="./img/teams/163on.webp," type="image/webp" /> -->
+                  <img
+                    class="teams-card__img lazy"
+                    data-src="./img/teams/163on.png"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <a href="#" class="teams-card">
+                <picture class="teams-card__pic">
+                  <!-- <source data-srcset="./img/teams/gj.webp," type="image/webp" /> -->
+                  <img
+                    class="teams-card__img lazy"
+                    data-src="./img/teams/gj.png"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <a href="#" class="teams-card">
+                <picture class="teams-card__pic">
+                  <!-- <source data-srcset="./img/teams/nemiga.webp," type="image/webp" /> -->
+                  <img
+                    class="teams-card__img lazy"
+                    data-src="./img/teams/nemiga.png"
+                    alt=""
+                  />
+                </picture>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="faq">
+          <div class="container faq__container">
+            <h2 class="section-title faq__title">F.A.Q.</h2>
+            <div class="faq__cards">
+              <div class="faq-card bayan">
+                <div class="faq-card__top">
+                  <h3 class="faq-card__question">
+                    Какие игровые настройки должны быть?
+                  </h3>
+                </div>
+                <div class="faq-card__bottom">
+                  <div class="faq-card__answer">
+                    <h4 class="faq-card__answer-heading">Ответ:</h4>
+                    <p>
+                      Все матчи будут проходить на последней версии игры.
+                      Игровой сервер предоставляется платформой Faceit.
+                    </p>
+                    <p>
+                      Участники должны использовать стандартные модели
+                      спецназовцев и террористов;
+                    </p>
+
+                    <h5>Map pool:</h5>
+                    <ul>
+                      <li>Dust2 (de_dust2)</li>
+                      <li>Inferno (de_inferno)</li>
+                      <li>Mirage (de_mirage)</li>
+                      <li>Nuke (de_nuke)</li>
+                      <li>Overpass (de_overpass)</li>
+                      <li>Ancient (de_ancient)</li>
+                      <li>Vertigo (de_vertigo)</li>
+                    </ul>
+
+                    <h5>Настройки сервера:</h5>
+                    <ol>
+                      <li>Rounds: MR15</li>
+                      <li>Round-time: 1:55 minutes</li>
+                      <li>Freeze-time: 12 seconds</li>
+                      <li>Buy-time: 12 seconds</li>
+                      <li>C4 timer: 40 seconds</li>
+                      <li>Overtime Money: $16,000</li>
+                      <li>Overtime Rounds: MR3</li>
+                      <li>Timeouts – 4 timeouts of 30 seconds each</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-card bayan">
+                <div class="faq-card__top">
+                  <h3 class="faq-card__question">Что запрещено игрокам?</h3>
+                </div>
+                <div class="faq-card__bottom">
+                  <div class="faq-card__answer">
+                    <h4 class="faq-card__answer-heading">Ответ:</h4>
+                    <ul>
+                      <li>
+                        Использовать в никнеймах, названии команды, аватарах, а
+                        также логотипах команд ненормативную лексику, пропаганду
+                        насилия, расизма, порнографических материалов.
+                        Организатор вправе просить команды об изменениях в
+                        никнеймах, названиях команд, аватарах, а также логотипах
+                        команд;
+                      </li>
+                      <li>
+                        Саботирование матчей, чрезмерный флуд, неуважение к
+                        сопернику, оскорбления.
+                      </li>
+                    </ul>
+                    <h4>
+                      За невыполнение данного пункта команда получает
+                      предупреждение/штраф от выигранного призового фонда;
+                    </h4>
+                    <ul>
+                      <li>
+                        Играть с разных аккаунтов на протяжение всего турнира.
+                      </li>
+                      <li>
+                        Игрок, который был заблокирован VAC на какой-либо из
+                        своих учетных записей, не имеет права принимать участие
+                        в турнире.
+                      </li>
+                      <li>
+                        VAC-бан дисквалифицирует игрока из турнира, только если
+                        он получил его менее 3 лет назад.
+                      </li>
+                      <li>
+                        Использование “name-tag” (группы steam) запрещено.
+                      </li>
+                      <li>Использование читов запрещено.</li>
+                      <li>
+                        Игрокам запрещается делать ставки на исход своих, либо
+                        же чужих матчей.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-card bayan">
+                <div class="faq-card__top">
+                  <h3 class="faq-card__question">ОБЯЗАННОСТИ ИГРОКОВ:</h3>
+                </div>
+                <div class="faq-card__bottom">
+                  <div class="faq-card__answer">
+                    <h4 class="faq-card__answer-heading">Ответ:</h4>
+                    <ul>
+                      <li>
+                        Обязаны соблюдать нижеизложенные стандарты порядочности
+                        и спортивного поведения;
+                      </li>
+                      <li>
+                        Обязаны использовать только настройки, доступные в
+                        профиле;
+                      </li>
+                      <li>
+                        Обязаны являться к старту матча к строго назначенному
+                        времени. Решение о переносе матча может выноситься
+                        только Судьей соревнований;
+                      </li>
+                      <li>
+                        Обязаны использовать никнейм указанный в регистрационной
+                        заявке.
+                      </li>
+                      <li>
+                        По запросу организаторов турнира, игрок должен
+                        предоставить всю необходимую информацию (документ
+                        удостоверяющий возраст, название команды, позиция,
+                        полное имя, никнейм, дата рождения, гражданство, email,
+                        steamID и пр. ).
+                      </li>
+                      <li>
+                        Во время турнира, команды обязаны предоставить
+                        фотографии игроков для использования этих фотографий в
+                        медиа. (Игровой худ, посты в социальных сетях и т.д)
+                      </li>
+                      <li>Обязаны играть с основных аккаунтов.</li>
+                      <li>
+                        Команды участники обязаны находится за игровым местом не
+                        менее чем за 15 минут до начала официального матча.
+                        Организаторы турнира вправе проверить это.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-card bayan">
+                <div class="faq-card__top">
+                  <h3 class="faq-card__question">
+                    Как решаются спорные вопросы:
+                  </h3>
+                </div>
+                <div class="faq-card__bottom">
+                  <div class="faq-card__answer">
+                    <h4 class="faq-card__answer-heading">Ответ:</h4>
+                    <ul>
+                      <li>
+                        При подозрении в нечестной игре и/или несоблюдении
+                        регламента команды вправе подавать жалобы в течение 10
+                        минут после окончания матча Судье соревнований.
+                      </li>
+                      <li>
+                        По истечению 10 минут жалобы рассмотрению не подлежат;
+                      </li>
+                      <li>
+                        Все спорные моменты решаются с судьёй соревнований и
+                        обсуждению не подлежат.
+                      </li>
+                      <li>
+                        Предупреждения, могут выноситься за саботирование
+                        матчей, чрезмерный флуд, неуважение к сопернику и т.д.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-card bayan">
+                <div class="faq-card__top">
+                  <h3 class="faq-card__question">ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ</h3>
+                </div>
+                <div class="faq-card__bottom">
+                  <div class="faq-card__answer">
+                    <h4 class="faq-card__answer-heading">Ответ:</h4>
+                    <ul>
+                      <li>
+                        По требованию организаторов участники обязаны
+                        предоставить свои фотографии. В противном случае команда
+                        получает штраф в размере 10% от выигранного призового
+                        фонда за каждое не предоставленное фото;
+                      </li>
+                      <li>
+                        Факт участия в соревновании означает, что их фамилии,
+                        имена, отчества, фотографии, видео-, аудио- и иные
+                        материалы о них могут быть использованы организатором в
+                        любых рекламных и (или) информационных материалах,
+                        связанных с проведением соревнования, без уплаты
+                        какого-либо вознаграждения участникам. Победитель
+                        соревнования дает свое согласие на интервью в средствах
+                        массовой информации в связи с проведением данного
+                        Соревнования, без выплаты ему какого-либо
+                        вознаграждения. Все права на такие рекламные материалы
+                        принадлежат Организатору.
+                      </li>
+                      <li>Использования скриптов запрещено.</li>
+                      <li>
+                        Использования “багов” и “фичей” запрещено. За
+                        исключением “багов и фичей” одобренных судьей
+                        соревнований.
+                      </li>
+                      <li>
+                        Все матчи должны начинаться с пятью игроками в команде
+                        (5 на 5), никакие другие комбинации не допускаются. Если
+                        один из участников матча не явится в отведенное время,
+                        матч для этой команды будет засчитан как неявка.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-
-      <div class="content">
-        <form action="">
-          <h2>Заголовок формы</h2>
-          <label class="input input--name">
-            <input
-              class="input__field"
-              name="user_name"
-              type="text"
-              placeholder="Имя"
-              data-value-missing="Заполните имя"
-              data-value-invalid="Что-то не так с введенным именем"
-              autocomplete="name"
-            />
-            <span class="input__message">Сообщение</span>
-          </label>
-          <label class="input input--tel">
-            <input
-              class="input__field"
-              name="user_tel"
-              type="tel"
-              placeholder="Телефон"
-              maxlength="25"
-              minlength="10"
-              data-value-missing="Напишите телефон"
-              data-value-invalid="Проверьте корректность телефона"
-              autocomplete="tel"
-            />
-            <span class="input__message">Ошибка</span>
-          </label>
-          <label class="input input--email">
-            <input
-              class="input__field"
-              name="user_email"
-              type="email"
-              placeholder="Email"
-              autocorrect="off"
-              autocomplete="email"
-              data-value-missing="Напишите имейл"
-              data-value-invalid="Проверьте корректность имейла"
-            />
-            <span class="input__message">Ошибка</span>
-          </label>
-          <button class="button button--primary" type="submit">
-            Отправить!
-          </button>
-        </form>
-        <button class="button button--primary" data-poppa-open="popich">
-          Открыть
-        </button>
-        <button>еще</button>
-      </div>
-
-      <div id="popich" class="poppa">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
-        consectetur velit architecto illo! A itaque saepe consequatur quam
-        iusto, quaerat ratione, earum ad et recusandae voluptates iure error
-        quidem tempore!
-      </div>
 
       @@include('tpls/footer.html',{})
     </div>
 
-    @@include('tpls/modals.html', {})
+    <!-- @@include('tpls/modals.html', {}) -->
     <script src="./js/bundle.min.js"></script>
   </body>
 </html>
