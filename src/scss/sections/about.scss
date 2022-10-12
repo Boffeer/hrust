@@ -1,0 +1,76 @@
+.about {
+  padding-top: 150px;
+  padding-bottom: 231px;
+  background: linear-gradient(
+    180deg,
+    rgba(125, 11, 0, 0.5) 18.2%,
+    #c81200 76.03%
+  );
+}
+.about__container {
+  max-width: 1800px;
+}
+
+.about__title {
+  margin-bottom: 30px;
+}
+.about__title::before,
+.about__title::after {
+  display: none;
+}
+
+.about-card {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 86px;
+}
+.about-card::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 60%;
+  content: "";
+  background: rgba(0, 0, 0, 0.2);
+}
+.about-card__pic {
+  display: block;
+  max-width: 1088px;
+  margin-right: auto;
+  margin-bottom: -30px;
+  margin-left: auto;
+}
+
+.about-card__img {
+  display: block;
+}
+.about-card__title {
+  margin-bottom: 38px;
+  font-family: "Inter", sans-serif;
+  font-size: 90px;
+  font-style: italic;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+}
+
+.about-card__button {
+  display: block;
+  width: 100%;
+  max-width: 735px;
+  padding: 33px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Inter", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+  color: #ffffff;
+  text-align: center;
+  background-image: url("../img/common/button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

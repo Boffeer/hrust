@@ -1,0 +1,131 @@
+.fund {
+  padding-top: 133px;
+  padding-bottom: 85px;
+  background-color: #000;
+}
+.fund__container {
+  max-width: 1640px;
+  margin-bottom: 140px;
+}
+
+.fund__title {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 110px;
+}
+.fund__cup {
+  position: relative;
+  z-index: 1;
+}
+.fund__cup::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  max-width: 1085px;
+  height: 1085px;
+  max-height: 1085px;
+  margin-right: auto;
+  margin-left: auto;
+  content: "";
+  background: #ff0000;
+  filter: blur(269.5px);
+}
+.fund__cup::after {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  display: block;
+  height: 500px;
+  margin-top: 220px;
+  content: "";
+  background-image: url("../img/common/arrow-bg.svg");
+  background-position: top left;
+}
+
+.fund__pic {
+  display: block;
+  width: 100%;
+  max-width: 887px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  transform: translateX(50px);
+}
+
+.fund__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.fund__cards {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 478px);
+  row-gap: 100px;
+  justify-content: space-between;
+  margin-top: -710px;
+}
+
+.fund-card {
+  padding-top: 30px;
+  background-image: url("../img/common/card-border.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+.fund-card__heading {
+  margin-bottom: 3px;
+  font-size: 70px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.fund-card__pic {
+  display: block;
+  width: 100%;
+  height: 145px;
+}
+.fund-card__imdg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.stream {
+  position: relative;
+  z-index: 1;
+}
+.stream__title {
+  margin-bottom: 70px;
+}
+.stream__channels {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 160px;
+}
+.stream-channel {
+  margin-right: 78px;
+}
+.stream-channel:last-child {
+  margin-right: 0;
+}
+.stream-channel__icon {
+  display: block;
+  height: 82px;
+  fill: #fff;
+}
+.stream__video {
+  max-width: 1620px;
+  height: 833px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.stream__video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

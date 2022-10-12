@@ -1,0 +1,34 @@
+.teams {
+  padding-top: 224px;
+  padding-bottom: 189px;
+  margin-top: -160px;
+  background-color: #000;
+  background-image: url("../img/teams/teams-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.teams__title {
+  max-width: 800px;
+  margin-bottom: 80px;
+}
+
+.teams__title::after {
+  top: -80px;
+}
+
+.teams__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.teams-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 262px;
+  margin-right: 18px;
+  margin-left: 18px;
+}

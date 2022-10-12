@@ -1,0 +1,126 @@
+.hero {
+  padding-top: 250px;
+  background-color: #c93515;
+  background-image: url(../img/hero/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 2150px;
+  margin-left: 0;
+}
+
+.hero__figure {
+  max-width: 995px;
+}
+.hero__pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left bottom;
+}
+
+.hero__button {
+  display: block;
+  max-width: 540px;
+  padding: 30px 100px;
+  margin-right: 0;
+  margin-bottom: -100px;
+  margin-left: auto;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #000;
+  transform: translate(-26px, -197px);
+}
+
+.hero-offer {
+  width: 100%;
+  max-width: 727px;
+  padding-top: 130px;
+  margin-left: auto;
+}
+.hero-offer__date {
+  max-width: 360px;
+  margin-right: auto;
+  margin-bottom: 51px;
+  margin-left: auto;
+}
+
+.hero-offer__date-pic {
+  display: block;
+  width: 100%;
+  width: 100%;
+}
+.hero-offer__date-img {
+  display: block;
+  width: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.hero-offer__title {
+  max-width: 617px;
+  margin-right: auto;
+  margin-bottom: 29px;
+  margin-left: auto;
+}
+.hero-offer__title-pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hero-offer__title-img {
+  object-fit: contain;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-offer__subtitle {
+  text-align: left;
+}
+.hero-offer__subtitle::before,
+.hero-offer__subtitle::after {
+  display: none;
+}
+
+.hero-offer__desc {
+  margin-bottom: 25px;
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+}
+.hero-offer__desc:last-of-type {
+  margin-bottom: 22px;
+}
+
+.hero-offer__logos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hero-offer__logo-pic {
+  width: 144px;
+  margin-right: 36px;
+}
+.hero-offer__logo-pic:last-of-type {
+  margin-right: 0;
+}
+.hero-offer__logo-img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}

@@ -8,9 +8,14 @@ import Swiper, { Navigation, Autoplay } from "swiper";
 import "./unstable/burger.js";
 
 /**
- * Poppa
+ * Popups
  */
 import "./poppa.js";
+
+/**
+ * Аккордионы
+ */
+import "./unstable/bayan.js";
 
 /**
  * Lazy Load

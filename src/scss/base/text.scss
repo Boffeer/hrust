@@ -1,0 +1,40 @@
+.section-title {
+  position: relative;
+  max-width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 90px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 104px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-title::before {
+  position: absolute;
+  bottom: -40px;
+  left: 40px;
+  display: block;
+  width: 88px;
+  height: 200px;
+  content: "";
+  background-image: url("../img/common/title-brace-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section-title::after {
+  position: absolute;
+  top: -40px;
+  right: -10px;
+  display: block;
+  width: 88px;
+  height: 200px;
+  content: "";
+  background-image: url("../img/common/title-brace-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: scale(-1);
+}

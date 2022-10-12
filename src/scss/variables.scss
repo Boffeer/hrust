@@ -41,7 +41,7 @@ $input-placeholder: var(--c-input-placeholder);
 $error: var(--c-error);
 // ================ Colors End ================
 :root {
-  --c-text-regular: #333;
+  --c-text-regular: #fff;
   --c-text-secondary: #5b5b5b;
   --c-button-secondary: #5b5b5b;
   --c-text-label: #bdbdbd;
@@ -76,8 +76,8 @@ $error: var(--c-error);
     --container-padding: 10px;
   }
 
-  --ff-regular: "Ubuntu", sans-serif;
-  --ff-title: "Poiret One", sans-serif;
+  --ff-regular: "Progress", sans-serif;
+  --ff-title: "Inter", sans-serif;
 
   --fz-button: 18px;
   --lh-button: 126.5%;
