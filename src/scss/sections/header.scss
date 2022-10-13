@@ -11,6 +11,7 @@
   margin-left: auto;
   clip-path: polygon(0 2%, 100% 8%, 98% 88%, 3% 100%);
   background-color: #000000;
+  transition: all 0.3s ease;
   @media (max-width: 1920px) {
     top: 40px;
     max-width: 1125px;
@@ -50,6 +51,7 @@
 .header__logo {
   max-width: 295px;
   margin-right: 110px;
+  transition: all 0.3s;
   @media (max-width: 1920px) {
     max-width: 165px;
     margin-right: 61px;
@@ -143,5 +145,34 @@
   z-index: 2;
   @media (min-width: 577px) {
     display: none;
+  }
+}
+
+.header--scrolled {
+  @media (min-width: 577px) {
+    top: 0;
+    max-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+.header--scrolled .header__container {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 1921px) {
+    max-width: 1750px;
+  }
+}
+.header--scrolled .header__logo {
+  @media (min-width: 577px) {
+    max-width: 193px;
+    @media (max-width: 1920px) {
+      max-width: 108px;
+    }
+    @media (max-width: 992px) {
+      max-width: 54px;
+    }
   }
 }

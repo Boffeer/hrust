@@ -41,6 +41,18 @@ import "./utils/smooth-anchors.js";
  * Burger
  */
 import "./unstable/burger.js";
+
+// #region header
+const header = document.querySelector(".header");
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 30) {
+    header.classList.add("header--scrolled");
+  } else {
+    header.classList.remove("header--scrolled");
+  }
+});
+// #endregion header
+
 import "./unstable/cookies-snack.js";
 
 // #region stream
