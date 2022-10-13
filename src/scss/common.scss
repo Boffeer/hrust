@@ -4,45 +4,39 @@
   width: 40px;
   height: 40px;
   transition: $tr;
+}
 
-  & span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    width: 40%;
-    height: 2px;
-    background: $text-primary;
-    transition: $tr;
+.burger span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 40%;
+  height: 2px;
+  background: $text-primary;
+  transition: $tr;
+}
 
-    &:nth-child(1) {
-      transform: translate(-50%, calc(-50% - 5px));
-    }
+.burger span:nth-child(1) {
+  transform: translate(-50%, calc(-50% - 5px));
+}
 
-    &:nth-child(2) {
-      transform: translate(-50%, -50%);
-    }
+.burger span:nth-child(2) {
+  transform: translate(-50%, -50%);
+}
 
-    &:nth-child(3) {
-      transform: translate(-50%, calc(-50% + 5px));
-    }
-  }
+.burger span:nth-child(3) {
+  transform: translate(-50%, calc(-50% + 5px));
+}
 
-  &.is-active {
-    & span {
-      &:nth-child(1) {
-        transform: translate(-50%, -50%) rotate(45deg);
-      }
-
-      &:nth-child(2) {
-        width: 0;
-      }
-
-      &:nth-child(3) {
-        transform: translate(-50%, -50%) rotate(-45deg);
-      }
-    }
-  }
+.burger.is-active span:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.burger.is-active span:nth-child(2) {
+  width: 0;
+}
+.burger.is-active span:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 //========================================================================================================================================================
 

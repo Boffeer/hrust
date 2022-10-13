@@ -18,6 +18,10 @@
     padding-top: 174px;
     padding-bottom: 69px;
   }
+  @media (max-width: 576px) {
+    padding-top: 188px;
+    clip-path: polygon(0 0%, 100% 0%, 100% 92%, 0% 95%);
+  }
 }
 
 .teams__title {
@@ -33,6 +37,11 @@
   }
 }
 
+.teams__title::before {
+  @media (max-width: 576px) {
+    left: 30px;
+  }
+}
 .teams__title::after {
   top: -80px;
   @media (max-width: 1920px) {
@@ -40,6 +49,9 @@
   }
   @media (max-width: 992px) {
     top: -20px;
+  }
+  @media (max-width: 576px) {
+    right: 20px;
   }
 }
 

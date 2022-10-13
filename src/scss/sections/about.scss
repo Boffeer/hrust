@@ -17,6 +17,10 @@
     padding-top: 50px;
     padding-bottom: 70px;
   }
+  @media (max-width: 576px) {
+    padding-top: 44px;
+    clip-path: polygon(0 7%, 100% 0%, 100% 96%, 0% 91%);
+  }
 }
 .about::before {
   position: absolute;
@@ -100,6 +104,11 @@
   @media (max-width: 992px) {
     max-width: 338px;
     margin-bottom: -10px;
+  }
+  @media (max-width: 576px) {
+    width: calc(100% + 40px);
+    max-width: 420px;
+    margin-left: -20px;
   }
 }
 

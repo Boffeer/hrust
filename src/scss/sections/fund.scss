@@ -9,6 +9,9 @@
   @media (max-width: 992px) {
     padding-top: 33px;
   }
+  @media (max-width: 576px) {
+    padding-bottom: 25px;
+  }
 }
 .fund__container {
   max-width: 1640px;
@@ -21,6 +24,9 @@
     max-width: 530px;
     margin-bottom: 42px;
   }
+  @media (max-width: 576px) {
+    margin-bottom: 32px;
+  }
 }
 
 .fund__title {
@@ -32,6 +38,9 @@
   }
   @media (max-width: 992px) {
     margin-bottom: 29px;
+  }
+  @media (max-width: 576px) {
+    margin-bottom: 5px;
   }
 }
 .fund__cup {
@@ -82,6 +91,13 @@
     margin-top: 0px;
     background-size: 90px;
   }
+  @media (max-width: 576px) {
+    width: calc(100% + 30px);
+    height: 145px;
+    margin-top: 50px;
+    margin-left: -15px;
+    background-size: 70px;
+  }
 }
 
 .fund__pic {
@@ -126,6 +142,11 @@
     row-gap: 30px;
     margin-top: -220px;
   }
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(1, 148px);
+    justify-content: center;
+    margin-top: unset;
+  }
 }
 
 .fund-card {
@@ -140,6 +161,12 @@
   @media (max-width: 992px) {
     padding-top: 10px;
   }
+}
+.fund-card:nth-of-type(2) {
+  order: 3;
+}
+.fund-card:nth-of-type(4) {
+  order: 4;
 }
 .fund-card__heading {
   margin-bottom: 3px;
@@ -236,6 +263,11 @@
   @media (max-width: 992px) {
     max-width: 590px;
     height: 313px;
+  }
+  @media (max-width: 576px) {
+    width: calc(100% + 30px);
+    height: 165px;
+    margin-left: -15px;
   }
 }
 .stream__video iframe {

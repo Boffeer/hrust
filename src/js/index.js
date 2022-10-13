@@ -37,6 +37,11 @@ import "./unstable/tabs.js";
  */
 import "./utils/smooth-anchors.js";
 
+/**
+ * Burger
+ */
+import "./unstable/burger.js";
+
 // Аккордеон
 // const accordions = new DismalModules.Accordions()
 

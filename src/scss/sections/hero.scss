@@ -11,6 +11,9 @@
   @media (max-width: 992px) {
     padding-top: 87px;
   }
+  @media (max-width: 576px) {
+    padding-top: 45px;
+  }
 }
 
 .hero__container {
@@ -24,6 +27,9 @@
   @media (max-width: 1920px) {
     max-width: 1250px;
   }
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
 }
 
 .hero__figure {
@@ -36,6 +42,11 @@
   @media (max-width: 992px) {
     max-width: 400px;
     height: 410px;
+  }
+  @media (max-width: 576px) {
+    max-width: 360px;
+    height: 350px;
+    transform: translateX(-60px);
   }
 }
 .hero__pic {
@@ -84,6 +95,9 @@
     padding-bottom: 0;
     font-size: 12px;
   }
+  @media (max-width: 576px) {
+    bottom: -15px;
+  }
 }
 .hero__button:hover {
   @media (any-hover: hover) {
@@ -108,6 +122,14 @@
     padding-top: 40px;
     padding-right: 40px;
   }
+  @media (max-width: 576px) {
+    max-width: 280px;
+    padding-top: 30px;
+    padding-right: 0;
+    padding-bottom: 3px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .hero-offer__date {
   max-width: 360px;
@@ -122,6 +144,9 @@
     max-width: 127px;
     margin-bottom: 18px;
   }
+  @media (max-width: 576px) {
+    margin-bottom: 8px;
+  }
 }
 
 .hero-offer__date-pic {
@@ -132,7 +157,7 @@
 .hero-offer__date-img {
   display: block;
   width: 100%;
-  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -167,6 +192,9 @@
   @media (max-width: 1920px) {
     margin-bottom: 7px;
   }
+  @media (max-width: 576px) {
+    text-align: center;
+  }
 }
 .hero-offer__subtitle::before,
 .hero-offer__subtitle::after {
@@ -185,6 +213,11 @@
   @media (max-width: 992px) {
     font-size: 8px;
   }
+  @media (max-width: 576px) {
+    margin-bottom: 10px;
+    font-size: 10px;
+    text-align: center;
+  }
 }
 .hero-offer__desc:last-of-type {
   margin-bottom: 22px;
@@ -197,6 +230,9 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media (max-width: 576px) {
+    justify-content: center;
+  }
 }
 .hero-offer__logo-pic {
   width: 144px;
