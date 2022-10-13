@@ -17,8 +17,8 @@
 }
 
 .snack__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  display: flex;
+  // grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   align-items: center;
   justify-content: space-between;
   @media (max-width: 576px) {
