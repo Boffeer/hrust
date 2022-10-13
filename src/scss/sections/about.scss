@@ -13,6 +13,10 @@
     padding-top: 110px;
     padding-bottom: 134px;
   }
+  @media (max-width: 992px) {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
 }
 .about::before {
   position: absolute;
@@ -29,11 +33,24 @@
   background-image: url("../img/common/arrow-bg.svg");
   background-position: left top;
   transform: rotate(356deg);
+  @media (max-width: 1920px) {
+    width: 100%;
+    height: 250px;
+    background-size: 160px;
+  }
+  @media (max-width: 992px) {
+    top: -70px;
+    height: 180px;
+    background-size: 90px;
+  }
 }
 .about__container {
   max-width: 1800px;
   @media (max-width: 1920px) {
     max-width: 1050px;
+  }
+  @media (max-width: 992px) {
+    max-width: 580px;
   }
 }
 
@@ -54,6 +71,9 @@
   padding-bottom: 86px;
   @media (max-width: 1920px) {
     padding-bottom: 36px;
+  }
+  @media (max-width: 992px) {
+    padding-bottom: 15px;
   }
 }
 .about-card::before {
@@ -77,6 +97,10 @@
     max-width: 628px;
     margin-bottom: -20px;
   }
+  @media (max-width: 992px) {
+    max-width: 338px;
+    margin-bottom: -10px;
+  }
 }
 
 .about-card__img {
@@ -93,6 +117,10 @@
   @media (max-width: 1920px) {
     margin-bottom: 15px;
     font-size: 50px;
+  }
+  @media (max-width: 992px) {
+    margin-bottom: -2px;
+    font-size: 28px;
   }
 }
 
@@ -123,6 +151,12 @@
     padding-top: 18px;
     padding-bottom: 18px;
     font-size: 20px;
+  }
+  @media (max-width: 992px) {
+    max-width: 226px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
   }
 }
 

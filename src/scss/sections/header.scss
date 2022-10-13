@@ -11,11 +11,16 @@
   margin-left: auto;
   clip-path: polygon(0 2%, 100% 8%, 98% 88%, 3% 100%);
   background-color: #000000;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     top: 40px;
     max-width: 1125px;
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+  @media (max-width: 992px) {
+    top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 .header__container {
@@ -24,17 +29,24 @@
   justify-content: flex-end;
   max-width: 100%;
   padding-right: 130px;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     padding-right: 70px;
+  }
+  @media (max-width: 992px) {
+    padding-right: 55px;
   }
 }
 
 .header__logo {
   max-width: 295px;
   margin-right: 110px;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     max-width: 165px;
     margin-right: 61px;
+  }
+  @media (max-width: 992px) {
+    max-width: 102px;
+    margin-right: 31px;
   }
 }
 
@@ -47,9 +59,13 @@
 .header__nav-item {
   --fz: 25px;
   margin-right: 58px;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     margin-right: 28px;
     --fz: 14px;
+  }
+  @media (max-width: 992px) {
+    --fz: 12px;
+    margin-right: 10px;
   }
 }
 .header__nav-item:last-child {
@@ -62,7 +78,10 @@
   padding: 0 27px;
   font-size: var(--fz);
   color: #fff;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     padding: 0 17px;
+  }
+  @media (max-width: 992px) {
+    padding: 0 8px;
   }
 }

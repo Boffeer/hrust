@@ -14,6 +14,10 @@
     padding-top: 194px;
     padding-bottom: 79px;
   }
+  @media (max-width: 992px) {
+    padding-top: 174px;
+    padding-bottom: 69px;
+  }
 }
 
 .teams__title {
@@ -23,12 +27,19 @@
     max-width: 490px;
     margin-bottom: 40px;
   }
+  @media (max-width: 992px) {
+    max-width: 310px;
+    margin-bottom: 30px;
+  }
 }
 
 .teams__title::after {
   top: -80px;
   @media (max-width: 1920px) {
     top: -40px;
+  }
+  @media (max-width: 992px) {
+    top: -20px;
   }
 }
 
@@ -42,6 +53,9 @@
     margin-right: auto;
     margin-left: auto;
   }
+  @media (max-width: 992px) {
+    max-width: 500px;
+  }
 }
 .teams-card {
   display: flex;
@@ -54,5 +68,8 @@
     max-width: 162px;
     margin-right: 10px;
     margin-left: 10px;
+  }
+  @media (max-width: 992px) {
+    max-width: 72px;
   }
 }

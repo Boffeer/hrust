@@ -2,17 +2,24 @@
   padding-top: 133px;
   padding-bottom: 85px;
   background-color: #000;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     padding-top: 73px;
     padding-bottom: 15px;
+  }
+  @media (max-width: 992px) {
+    padding-top: 33px;
   }
 }
 .fund__container {
   max-width: 1640px;
   margin-bottom: 140px;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     max-width: 940px;
     margin-bottom: 72px;
+  }
+  @media (max-width: 992px) {
+    max-width: 530px;
+    margin-bottom: 42px;
   }
 }
 
@@ -20,8 +27,11 @@
   position: relative;
   z-index: 2;
   margin-bottom: 110px;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     margin-bottom: 56px;
+  }
+  @media (max-width: 992px) {
+    margin-bottom: 29px;
   }
 }
 .fund__cup {
@@ -42,9 +52,14 @@
   content: "";
   background: #ff0000;
   filter: blur(269.5px);
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     width: 500px;
     height: 500px;
+  }
+  @media (max-width: 992px) {
+    width: 360px;
+    height: 300px;
+    filter: blur(109.5px);
   }
 }
 .fund__cup::after {
@@ -57,10 +72,15 @@
   content: "";
   background-image: url("../img/common/arrow-bg.svg");
   background-position: top left;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     height: 320px;
     margin-top: 110px;
     background-size: 160px;
+  }
+  @media (max-width: 992px) {
+    height: 230px;
+    margin-top: 0px;
+    background-size: 90px;
   }
 }
 
@@ -72,9 +92,13 @@
   margin-right: auto;
   margin-left: auto;
   transform: translateX(50px);
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     max-width: 505px;
     transform: translateX(30px);
+  }
+  @media (max-width: 992px) {
+    max-width: 275px;
+    transform: translateX(13px);
   }
 }
 
@@ -92,10 +116,15 @@
   row-gap: 100px;
   justify-content: space-between;
   margin-top: -710px;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     grid-template-columns: repeat(2, 268px);
     row-gap: 50px;
     margin-top: -400px;
+  }
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 148px);
+    row-gap: 30px;
+    margin-top: -220px;
   }
 }
 
@@ -105,8 +134,11 @@
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     padding-top: 17px;
+  }
+  @media (max-width: 992px) {
+    padding-top: 10px;
   }
 }
 .fund-card__heading {
@@ -115,19 +147,25 @@
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     font-size: 40px;
+  }
+  @media (max-width: 992px) {
+    font-size: 22px;
   }
 }
 .fund-card__pic {
   display: block;
   width: 100%;
   height: 145px;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     height: 84px;
   }
+  @media (max-width: 992px) {
+    height: 44px;
+  }
 }
-.fund-card__imdg {
+.fund-card__img {
   display: block;
   width: 100%;
   height: 100%;
@@ -139,22 +177,31 @@
 }
 .stream__title {
   margin-bottom: 70px;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     margin-bottom: 30px;
+  }
+  @media (max-width: 992px) {
+    margin-bottom: 16px;
   }
 }
 .stream__channels {
   display: flex;
   justify-content: center;
   margin-bottom: 160px;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     margin-bottom: 80px;
+  }
+  @media (max-width: 992px) {
+    margin-bottom: 40px;
   }
 }
 .stream-channel {
   margin-right: 78px;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     margin-right: 0;
+  }
+  @media (max-width: 992px) {
+    max-width: 110px;
   }
 }
 .stream-channel:last-child {
@@ -164,8 +211,11 @@
   display: block;
   height: 82px;
   fill: #fff;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     height: 62px;
+  }
+  @media (max-width: 992px) {
+    height: 25px;
   }
 }
 .stream-channel__icon:hover {
@@ -179,9 +229,13 @@
   height: 833px;
   margin-right: auto;
   margin-left: auto;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     max-width: 900px;
     height: 473px;
+  }
+  @media (max-width: 992px) {
+    max-width: 590px;
+    height: 313px;
   }
 }
 .stream__video iframe {

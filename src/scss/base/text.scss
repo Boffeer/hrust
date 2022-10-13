@@ -10,9 +10,13 @@
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     max-width: 600px;
     font-size: 50px;
+  }
+  @media (max-width: 992px) {
+    max-width: 380px;
+    font-size: 28px;
   }
 }
 .section-title::before,
@@ -26,25 +30,36 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     width: 49px;
     height: 112px;
+  }
+  @media (max-width: 992px) {
+    width: 26px;
+    height: 61px;
   }
 }
 .section-title::before {
   bottom: -40px;
   left: 40px;
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     bottom: -20px;
     left: 50px;
+  }
+  @media (max-width: 992px) {
+    bottom: -10px;
   }
 }
 .section-title::after {
   top: -40px;
   right: -10px;
   transform: scale(-1);
-  @media (max-width: 1600px) {
+  @media (max-width: 1920px) {
     top: -20px;
     right: 20px;
+  }
+  @media (max-width: 992px) {
+    top: -10px;
+    right: 40px;
   }
 }
