@@ -41,6 +41,7 @@ import "./utils/smooth-anchors.js";
  * Burger
  */
 import "./unstable/burger.js";
+import "./unstable/cookies-snack.js";
 
 // #region stream
 const ACTIVE_CHANNEL_CLASS = "stream-channel--active";

@@ -4,16 +4,16 @@
   left: 0;
   z-index: 100;
   width: 100%;
-  transition: .5s;
-  transform: translate(0,100%);
+  background: #000;
+  transition: 0.5s;
+  transform: translate(0, 100%);
 
   &._show {
-    bottom: 16px;
+    bottom: 0px;
     transform: translate(0);
   }
 
   @media screen and (max-width: 768px) {
-
     & .container {
       padding: 0;
     }
@@ -24,6 +24,11 @@
   }
 }
 
+.cookie__container {
+  max-width: 100% !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
 .cookie__body {
   display: flex;
   align-items: center;
@@ -32,12 +37,11 @@
   max-width: 1000px;
   padding: 10px 16px;
   margin: 0 auto;
-  background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 6px 15px rgba(0,0,0,.1);
+  // border-radius: 6px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 
   @media screen and (max-width: 768px) {
-    box-shadow: 0 -4px 15px rgba(0,0,0,.1);
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -59,9 +63,9 @@
   margin: 2px 0 0 6px;
   font-size: 12px;
   font-weight: 600;
-
+  color: #fff;
   & a {
-    color: $accent2;
+    color: #f00;
     text-decoration: underline;
 
     &:hover {
@@ -82,8 +86,8 @@
     left: 50%;
     width: 1.5px;
     height: 12px;
-    content: '';
-    background: $second;
+    content: "";
+    background: #fff;
     transition: $tr;
     transform: translate(-50%, -50%) rotate(45deg);
   }
@@ -94,17 +98,16 @@
     left: 50%;
     width: 1.5px;
     height: 12px;
-    content: '';
-    background: $second;
+    content: "";
+    background: #fff;
     transition: $tr;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
 
   &:hover {
-
     &::before,
     &::after {
-      background: $main;
+      background: #f00;
     }
   }
 }

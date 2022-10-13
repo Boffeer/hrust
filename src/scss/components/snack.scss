@@ -6,8 +6,8 @@
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #656666;
-  background: rgba(33, 33, 33, 0.8);
+  color: #fff;
+  background: #000;
   backdrop-filter: blur(14px);
   opacity: 0;
   transition: var(--tr-regular);
@@ -32,6 +32,9 @@
   color: var(--c-text-on);
 }
 
+.snack__link {
+  color: #f00;
+}
 .snack__buttons {
   @media (max-width: 576px) {
     max-width: 100%;
@@ -39,9 +42,8 @@
   }
 }
 .snack__button {
-  min-width: 172px;
-  padding-top: 19px;
-  padding-bottom: 22px;
+  width: 20px;
+  height: 20px;
   font-size: 15px;
   @media (max-width: 576px) {
     width: 100%;

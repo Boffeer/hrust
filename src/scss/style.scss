@@ -152,3 +152,14 @@ body._lock {
   max-width: 100%;
   overflow-x: auto;
 }
+
+#snack-cookies .snack__container {
+  @media (max-width: 576px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    .snack__desc {
+      font-size: 12px;
+    }
+  }
+}
