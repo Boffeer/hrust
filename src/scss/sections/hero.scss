@@ -1,7 +1,7 @@
 .hero {
   padding-top: 250px;
   background-color: #c93515;
-  background-image: url(../img/hero/hero-bg.jpg);
+  background-image: url("../img/hero/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,6 +9,9 @@
     padding-top: 140px;
   }
   @media (max-width: 992px) {
+    padding-top: 70px;
+  }
+  @media (max-width: 768px) {
     padding-top: 87px;
   }
   @media (max-width: 576px) {
@@ -25,6 +28,9 @@
   padding-left: 0;
   margin-left: 0;
   @media (max-width: 1920px) {
+    max-width: 1750px;
+  }
+  @media (max-width: 1720px) {
     max-width: 1250px;
   }
   @media (max-width: 576px) {
@@ -36,17 +42,34 @@
   position: relative;
   max-width: 995px;
   @media (max-width: 1920px) {
+    max-width: 750px;
+    height: 870px;
+  }
+  @media (max-width: 1720px) {
     max-width: 589px;
     height: 670px;
   }
+  @media (max-width: 1200px) {
+    max-width: 500px;
+    height: 550px;
+  }
   @media (max-width: 992px) {
+    max-width: 450px;
+    height: 480px;
+  }
+  @media (max-width: 768px) {
     max-width: 400px;
     height: 410px;
   }
   @media (max-width: 576px) {
+    max-width: 450px;
+    height: 500px;
+    margin-right: auto;
+    transform: translateX(-60px);
+  }
+  @media (max-width: 335px) {
     max-width: 360px;
     height: 350px;
-    transform: translateX(-60px);
   }
 }
 .hero__figure::before {
@@ -62,13 +85,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  @media (max-width: 1920px) {
+  @media (max-width: 1720px) {
     top: 154px;
     left: 185px;
     width: 49px;
     height: 62px;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 768px) {
     top: 97px;
     left: 89px;
     width: 38px;
@@ -95,12 +118,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  @media (max-width: 1920px) {
+  @media (max-width: 1720px) {
     right: -90px;
     width: 77px;
     height: 79px;
   }
   @media (max-width: 992px) {
+    right: -40px;
+  }
+  @media (max-width: 768px) {
     top: 42%;
     right: -50px;
     width: 67px;
@@ -126,13 +152,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  @media (max-width: 1920px) {
+  @media (max-width: 1720px) {
     right: -110px;
     bottom: 23%;
     width: 99px;
     height: 102px;
   }
   @media (max-width: 992px) {
+    right: -80px;
+  }
+  @media (max-width: 768px) {
     right: -77px;
     bottom: 21%;
     width: 99px;
@@ -154,9 +183,10 @@
 
 .hero__button {
   position: absolute;
+  right: 10px;
+  bottom: 200px;
+  z-index: 4;
   // transform: translate(-26px, -197px);
-  right: -20px;
-  bottom: 40px;
   display: block;
   width: 100%;
   max-width: 540px;
@@ -173,13 +203,15 @@
   text-transform: uppercase;
   background-color: #000;
   transition: all 0.3s;
-  @media (max-width: 1920px) {
+  @media (max-width: 1720px) {
+    right: -20px;
+    bottom: 40px;
     max-width: 304px;
     padding: 10px 16px;
     font-size: 20px;
     transform: translate(-26px, -100px);
   }
-  @media (max-width: 992px) {
+  @media (max-width: 768px) {
     bottom: 22px;
     max-width: 190px;
     padding-top: 0;
@@ -187,6 +219,9 @@
     font-size: 12px;
   }
   @media (max-width: 576px) {
+    bottom: 55px;
+  }
+  @media (max-width: 335px) {
     bottom: -15px;
   }
 }
@@ -203,15 +238,22 @@
   padding-top: 130px;
   padding-bottom: 48px;
   margin-left: auto;
-  @media (max-width: 1920px) {
+  @media (max-width: 1720px) {
     max-width: 486px;
     padding-top: 70px;
     padding-bottom: 28px;
   }
+  @media (max-width: 1200px) {
+    max-width: 400px;
+  }
   @media (max-width: 992px) {
+    padding-left: 60px;
+  }
+  @media (max-width: 768px) {
     max-width: 300px;
     padding-top: 40px;
     padding-right: 40px;
+    padding-left: 0;
   }
   @media (max-width: 576px) {
     max-width: 280px;
@@ -227,11 +269,11 @@
   margin-right: auto;
   margin-bottom: 51px;
   margin-left: auto;
-  @media (max-width: 1920px) {
+  @media (max-width: 1720px) {
     max-width: 202px;
     margin-bottom: 31px;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 768px) {
     max-width: 127px;
     margin-bottom: 18px;
   }
@@ -280,7 +322,7 @@
 
 .hero-offer__subtitle {
   text-align: left;
-  @media (max-width: 1920px) {
+  @media (max-width: 1720px) {
     margin-bottom: 7px;
   }
   @media (max-width: 576px) {
@@ -296,12 +338,12 @@
   margin-bottom: 25px;
   font-family: "Inter", sans-serif;
   font-size: 25px;
-  @media (max-width: 1920px) {
+  @media (max-width: 1720px) {
     max-width: 470px;
     margin-bottom: 0;
     font-size: 14px;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 768px) {
     font-size: 8px;
   }
   @media (max-width: 576px) {
@@ -312,7 +354,7 @@
 }
 .hero-offer__desc:last-of-type {
   margin-bottom: 22px;
-  @media (max-width: 1920px) {
+  @media (max-width: 1720px) {
     margin-bottom: -28px;
   }
 }
@@ -328,10 +370,10 @@
 .hero-offer__logo-pic {
   width: 144px;
   margin-right: 36px;
-  @media (max-width: 1920px) {
+  @media (max-width: 1720px) {
     width: 80px;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 768px) {
     width: 50px;
     max-height: 70px;
     margin-right: 26px;

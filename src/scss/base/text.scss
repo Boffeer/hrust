@@ -11,6 +11,10 @@
   text-align: center;
   text-transform: uppercase;
   @media (max-width: 1920px) {
+    max-width: 750px;
+    font-size: 65px;
+  }
+  @media (max-width: 1720px) {
     max-width: 600px;
     font-size: 50px;
   }

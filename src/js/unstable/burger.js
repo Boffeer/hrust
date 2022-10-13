@@ -24,3 +24,9 @@ if (header && burger) {
     }
   });
 }
+
+document.querySelectorAll(".header__nav-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    closeBurger();
+  });
+});

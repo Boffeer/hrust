@@ -10,9 +10,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @media (max-width: 1920px) {
+  @media (max-width: 1720px) {
     padding-top: 194px;
+    padding-bottom: 149px;
+  }
+  @media (max-width: 1620px) {
     padding-bottom: 79px;
+  }
+  @media (max-width: 1200px) {
+    padding-bottom: 129px;
   }
   @media (max-width: 992px) {
     padding-top: 174px;
@@ -28,6 +34,9 @@
   max-width: 800px;
   margin-bottom: 80px;
   @media (max-width: 1920px) {
+    max-width: 600px;
+  }
+  @media (max-width: 1720px) {
     max-width: 490px;
     margin-bottom: 40px;
   }
