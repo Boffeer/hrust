@@ -42,6 +42,35 @@ import "./utils/smooth-anchors.js";
  */
 import "./unstable/burger.js";
 
+// #region stream
+const ACTIVE_CHANNEL_CLASS = "stream-channel--active";
+const channels = document.querySelectorAll(".stream-channel");
+const streams = document.querySelectorAll(".stream__video");
+
+channels.forEach((channel) => {
+  channel.addEventListener("click", (e) => {
+    channels.forEach((channel) => {
+      channel.classList.remove(ACTIVE_CHANNEL_CLASS);
+    });
+    streams.forEach((stream) => {
+      if (
+        stream.dataset.stream == channel.querySelector("button").dataset.stream
+      ) {
+        stream.classList.add("stream__video--active");
+        stream
+          .querySelector("iframe")
+          .setAttribute("src", stream.querySelector("iframe").dataset.src);
+      } else {
+        stream.classList.remove("stream__video--active");
+        stream.querySelector("iframe").setAttribute("src", "");
+      }
+    });
+
+    channel.classList.add(ACTIVE_CHANNEL_CLASS);
+  });
+});
+// #endregion stream
+
 // Аккордеон
 // const accordions = new DismalModules.Accordions()
 

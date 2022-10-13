@@ -115,3 +115,40 @@ body._lock {
 
 // Стили для отдельных страниц
 // @import "./pages/";
+
+.modal-rules {
+  max-width: 900px;
+  max-height: 80vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.modal-rules h2 {
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+  font-size: 28px;
+}
+.modal-rules h3 {
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+  font-size: 20px;
+}
+
+.modal-rules p {
+  margin-bottom: 1.5em;
+}
+
+.modal-rules table {
+  margin-bottom: 1.5em;
+  text-align: left;
+  @media (max-width: 576px) {
+    width: 790px;
+  }
+}
+
+.modal-rules__table {
+  max-width: 100%;
+  overflow-x: auto;
+}

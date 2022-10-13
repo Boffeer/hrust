@@ -12,7 +12,7 @@
       @@include('tpls/header.html',{})
 
       <main class="main">
-        <section class="hero">
+        <section class="hero" id="hero">
           <div class="container hero__container">
             <div class="hero__figure">
               <picture class="hero__pic">
@@ -86,7 +86,7 @@
             </div>
           </div>
         </section>
-        <section class="fund">
+        <section class="fund" id="fund">
           <div class="container fund__container">
             <h2 class="section-title fund__title">Призовой фонд</h2>
             <div class="fund__cup">
@@ -159,32 +159,49 @@
             </div>
           </div>
 
-          <div class="stream">
+          <div class="stream" id="stream">
             <div class="container stream__container">
               <h2 class="section-title stream__title">Смотри онлайн</h2>
               <div class="stream__channels">
-                <div class="stream-channel">
-                  <button class="stream-channel__icon">
+                <div
+                  class="stream-channel stream-channel--twitch stream-channel--active"
+                >
+                  <button class="stream-channel__icon" data-stream="twitch">
                     <svg>
                       <use xlink:href="./img/common/twitch.svg#twitch" />
                     </svg>
                   </button>
                 </div>
                 <div class="stream-channel stream-channel--vk">
-                  <button class="stream-channel__icon">
+                  <button class="stream-channel__icon" data-stream="vk">
                     <svg>
                       <use xlink:href="./img/common/vk.svg#vk" />
                     </svg>
                   </button>
                 </div>
               </div>
-              <div class="stream__video">
-                <iframe src="http://localhost:3000/" frameborder="0"></iframe>
+              <div class="stream__video" data-stream="twitch">
+                <iframe
+                  data-src="https://player.twitch.tv/?channel=xavierfenaux&parent=www.example.com"
+                  frameborder="0"
+                  allowfullscreen="true"
+                  scrolling="no"
+                ></iframe>
+              </div>
+              <div class="stream__video" data-stream="vk">
+                <iframe
+                  data-src="https://vk.com/video_ext.php?oid=-9693056&id=456247723&hash=36128942f1f36e30&hd=3"
+                  width="1280"
+                  height="720"
+                  allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
               </div>
             </div>
           </div>
         </section>
-        <section class="about">
+        <section class="about" id="rules">
           <div class="container about__container">
             <h2 class="section-title about__title">
               Турнир проходит <br />
@@ -203,13 +220,16 @@
                 />
               </picture>
               <h3 class="about-card__title">Про турнир</h3>
-              <button class="button about-card__button" data-poppa-open="rules">
+              <button
+                class="button about-card__button"
+                data-poppa-open="pop-rules"
+              >
                 Регламент турнира
               </button>
             </article>
           </div>
         </section>
-        <section class="teams">
+        <section class="teams" id="teams">
           <div class="container teams__container">
             <h2 class="section-title teams__title">Команды - хэдлайнеры</h2>
             <div class="teams__gallery">
@@ -296,7 +316,7 @@
             </div>
           </div>
         </section>
-        <section class="faq">
+        <section class="faq" id="faq">
           <div class="container faq__container">
             <h2 class="section-title faq__title">F.A.Q.</h2>
             <div class="faq__cards">
