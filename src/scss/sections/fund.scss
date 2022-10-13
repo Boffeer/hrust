@@ -2,16 +2,27 @@
   padding-top: 133px;
   padding-bottom: 85px;
   background-color: #000;
+  @media (max-width: 1600px) {
+    padding-top: 73px;
+    padding-bottom: 15px;
+  }
 }
 .fund__container {
   max-width: 1640px;
   margin-bottom: 140px;
+  @media (max-width: 1600px) {
+    max-width: 940px;
+    margin-bottom: 72px;
+  }
 }
 
 .fund__title {
   position: relative;
   z-index: 2;
   margin-bottom: 110px;
+  @media (max-width: 1600px) {
+    margin-bottom: 56px;
+  }
 }
 .fund__cup {
   position: relative;
@@ -31,6 +42,10 @@
   content: "";
   background: #ff0000;
   filter: blur(269.5px);
+  @media (max-width: 1600px) {
+    width: 500px;
+    height: 500px;
+  }
 }
 .fund__cup::after {
   position: absolute;
@@ -42,6 +57,11 @@
   content: "";
   background-image: url("../img/common/arrow-bg.svg");
   background-position: top left;
+  @media (max-width: 1600px) {
+    height: 320px;
+    margin-top: 110px;
+    background-size: 160px;
+  }
 }
 
 .fund__pic {
@@ -52,6 +72,10 @@
   margin-right: auto;
   margin-left: auto;
   transform: translateX(50px);
+  @media (max-width: 1600px) {
+    max-width: 505px;
+    transform: translateX(30px);
+  }
 }
 
 .fund__img {
@@ -68,6 +92,11 @@
   row-gap: 100px;
   justify-content: space-between;
   margin-top: -710px;
+  @media (max-width: 1600px) {
+    grid-template-columns: repeat(2, 268px);
+    row-gap: 50px;
+    margin-top: -400px;
+  }
 }
 
 .fund-card {
@@ -76,6 +105,9 @@
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
+  @media (max-width: 1600px) {
+    padding-top: 17px;
+  }
 }
 .fund-card__heading {
   margin-bottom: 3px;
@@ -83,11 +115,17 @@
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  @media (max-width: 1600px) {
+    font-size: 40px;
+  }
 }
 .fund-card__pic {
   display: block;
   width: 100%;
   height: 145px;
+  @media (max-width: 1600px) {
+    height: 84px;
+  }
 }
 .fund-card__imdg {
   display: block;
@@ -101,14 +139,23 @@
 }
 .stream__title {
   margin-bottom: 70px;
+  @media (max-width: 1600px) {
+    margin-bottom: 30px;
+  }
 }
 .stream__channels {
   display: flex;
   justify-content: center;
   margin-bottom: 160px;
+  @media (max-width: 1600px) {
+    margin-bottom: 80px;
+  }
 }
 .stream-channel {
   margin-right: 78px;
+  @media (max-width: 1600px) {
+    margin-right: 0;
+  }
 }
 .stream-channel:last-child {
   margin-right: 0;
@@ -117,6 +164,9 @@
   display: block;
   height: 82px;
   fill: #fff;
+  @media (max-width: 1600px) {
+    height: 62px;
+  }
 }
 .stream-channel__icon:hover {
   @media (any-hover: hover) {
@@ -129,6 +179,10 @@
   height: 833px;
   margin-right: auto;
   margin-left: auto;
+  @media (max-width: 1600px) {
+    max-width: 900px;
+    height: 473px;
+  }
 }
 .stream__video iframe {
   display: block;

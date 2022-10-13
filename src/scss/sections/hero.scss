@@ -5,20 +5,31 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (max-width: 1600px) {
+    padding-top: 140px;
+  }
 }
 
 .hero__container {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
   max-width: 2150px;
   padding-right: 0;
   padding-left: 0;
   margin-left: 0;
+  @media (max-width: 1600px) {
+    max-width: 1250px;
+  }
 }
 
 .hero__figure {
+  position: relative;
   max-width: 995px;
+  @media (max-width: 1600px) {
+    max-width: 589px;
+    height: 670px;
+  }
 }
 .hero__pic {
   display: block;
@@ -33,9 +44,14 @@
 }
 
 .hero__button {
+  position: absolute;
+  // transform: translate(-26px, -197px);
+  right: -20px;
+  bottom: 40px;
   display: block;
+  width: 100%;
   max-width: 540px;
-  padding: 30px 100px;
+  padding: 30px;
   margin-right: 0;
   margin-bottom: -100px;
   margin-left: auto;
@@ -48,7 +64,12 @@
   text-transform: uppercase;
   background-color: #000;
   transition: all 0.3s;
-  transform: translate(-26px, -197px);
+  @media (max-width: 1600px) {
+    max-width: 304px;
+    padding: 10px 16px;
+    font-size: 20px;
+    transform: translate(-26px, -100px);
+  }
 }
 .hero__button:hover {
   @media (any-hover: hover) {
@@ -61,13 +82,23 @@
   width: 100%;
   max-width: 727px;
   padding-top: 130px;
+  padding-bottom: 48px;
   margin-left: auto;
+  @media (max-width: 1600px) {
+    max-width: 486px;
+    padding-top: 70px;
+    padding-bottom: 28px;
+  }
 }
 .hero-offer__date {
   max-width: 360px;
   margin-right: auto;
   margin-bottom: 51px;
   margin-left: auto;
+  @media (max-width: 1600px) {
+    max-width: 202px;
+    margin-bottom: 31px;
+  }
 }
 
 .hero-offer__date-pic {
@@ -87,6 +118,10 @@
   margin-right: auto;
   margin-bottom: 29px;
   margin-left: auto;
+  @media (max-width: 1600px) {
+    max-width: 346px;
+    margin-bottom: 19px;
+  }
 }
 .hero-offer__title-pic {
   display: block;
@@ -102,6 +137,9 @@
 
 .hero-offer__subtitle {
   text-align: left;
+  @media (max-width: 1600px) {
+    margin-bottom: 7px;
+  }
 }
 .hero-offer__subtitle::before,
 .hero-offer__subtitle::after {
@@ -112,9 +150,17 @@
   margin-bottom: 25px;
   font-family: "Inter", sans-serif;
   font-size: 25px;
+  @media (max-width: 1600px) {
+    max-width: 470px;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
 }
 .hero-offer__desc:last-of-type {
   margin-bottom: 22px;
+  @media (max-width: 1600px) {
+    margin-bottom: -28px;
+  }
 }
 
 .hero-offer__logos {
@@ -125,6 +171,9 @@
 .hero-offer__logo-pic {
   width: 144px;
   margin-right: 36px;
+  @media (max-width: 1600px) {
+    width: 80px;
+  }
 }
 .hero-offer__logo-pic:last-of-type {
   margin-right: 0;

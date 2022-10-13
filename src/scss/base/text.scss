@@ -6,28 +6,18 @@
   font-size: 90px;
   font-style: italic;
   font-weight: 700;
-  line-height: 104px;
+  line-height: 1.25;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  @media (max-width: 1600px) {
+    max-width: 600px;
+    font-size: 50px;
+  }
 }
-.section-title::before {
-  position: absolute;
-  bottom: -40px;
-  left: 40px;
-  display: block;
-  width: 88px;
-  height: 200px;
-  content: "";
-  background-image: url("../img/common/title-brace-left.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+.section-title::before,
 .section-title::after {
   position: absolute;
-  top: -40px;
-  right: -10px;
   display: block;
   width: 88px;
   height: 200px;
@@ -36,5 +26,25 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (max-width: 1600px) {
+    width: 49px;
+    height: 112px;
+  }
+}
+.section-title::before {
+  bottom: -40px;
+  left: 40px;
+  @media (max-width: 1600px) {
+    bottom: -20px;
+    left: 50px;
+  }
+}
+.section-title::after {
+  top: -40px;
+  right: -10px;
   transform: scale(-1);
+  @media (max-width: 1600px) {
+    top: -20px;
+    right: 20px;
+  }
 }

@@ -6,6 +6,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (max-width: 1920px) {
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
 }
 .footer__container {
   display: flex;
@@ -20,18 +24,27 @@
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px;
   color: #ff0000;
   text-align: center;
+  @media (max-width: 1920px) {
+    margin-bottom: 34px;
+    font-size: 14px;
+  }
 }
 
 .footer__socials {
   margin-bottom: 71px;
+  @media (max-width: 1920px) {
+    margin-bottom: 36px;
+  }
 }
 .footer__socials .socials__link {
   --size: 80px;
   margin-right: 27px;
   margin-left: 27px;
+  @media (max-width: 1920px) {
+    --size: 50px;
+  }
 }
 .footer__socials .socials__icon {
   fill: #fff;
@@ -47,7 +60,9 @@
   font-size: 35px;
   font-style: normal;
   font-weight: 600;
-  line-height: 42px;
   color: #ffffff;
   text-align: center;
+  @media (max-width: 1920px) {
+    font-size: 20px;
+  }
 }

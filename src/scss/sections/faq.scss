@@ -4,6 +4,10 @@
   padding-bottom: 350px;
   margin-top: -190px;
   background-color: #c81201;
+  @media (max-width: 1920px) {
+    padding-top: 144px;
+    padding-bottom: 199px;
+  }
 }
 .faq::after {
   position: absolute;
@@ -20,6 +24,11 @@
   background-image: url("../img/common/arrow-bg.svg");
   background-position: left top;
   transform: rotate(356deg);
+  @media (max-width: 1920px) {
+    bottom: -210px;
+    height: 370px;
+    background-size: 160px;
+  }
 }
 .faq__container {
   max-width: 1510px;
@@ -27,17 +36,31 @@
 
 .faq__title {
   margin-bottom: 95px;
+  @media (max-width: 1920px) {
+    margin-bottom: 55px;
+  }
 }
 .faq__title::before,
 .faq__title::after {
   display: none;
 }
 
+.faq__cards {
+  margin-right: auto;
+  margin-left: auto;
+  @media (max-width: 1920px) {
+    max-width: 840px;
+  }
+}
 .faq-card {
   margin-bottom: 28px;
   color: #000;
   background-color: #fff;
   --padding-horizontal: 120px;
+  @media (max-width: 1920px) {
+    --padding-horizontal: 60px;
+    margin-bottom: 18px;
+  }
 }
 .faq-card:last-of-type {
   margin-bottom: 0;
@@ -46,6 +69,10 @@
 .faq-card__top {
   position: relative;
   padding: 7px var(--padding-horizontal);
+  @media (max-width: 1920px) {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
 }
 .faq-card__top::before,
 .faq-card__top::after {
@@ -59,6 +86,11 @@
   background-color: #000;
   transition: all 0.2s ease-in;
   transform: translateY(-50%);
+  @media (max-width: 1920px) {
+    right: 60px;
+    width: 16px;
+    height: 6px;
+  }
 }
 .faq-card__top::before {
 }
@@ -69,6 +101,9 @@
   font-size: 48px;
   font-weight: 700;
   color: #000000;
+  @media (max-width: 1920px) {
+    font-size: 26px;
+  }
 }
 .faq-card__bottom {
   padding: 7px var(--padding-horizontal);
@@ -78,15 +113,28 @@
 .faq-card__bottom h4 {
   margin-bottom: 19px;
   font-size: 48px;
-  line-height: 55px;
   color: #000000;
+  @media (max-width: 1920px) {
+    font-size: 27px;
+  }
 }
 
-.faq-card__bottom p {
-  font-size: 30px;
+.faq-card__bottom ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
-.faq-card__bottom li {
+.faq-card__bottom li,
+.faq-card__bottom p {
+  position: relative;
   font-size: 30px;
+  @media (max-width: 1920px) {
+    font-size: 17px;
+  }
+}
+.faq-card__bottom li::before {
+  position: absolute;
+  left: -15px;
+  content: "●";
 }
 
 .bayan--opened .faq-card__top::after {
