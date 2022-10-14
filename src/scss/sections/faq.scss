@@ -1,5 +1,6 @@
 .faq {
   position: relative;
+  z-index: 1;
   padding-top: 130px;
   padding-bottom: 350px;
   margin-top: -190px;
@@ -21,6 +22,7 @@
   right: 0;
   bottom: -110px;
   left: 0;
+  z-index: -1;
   display: block;
   width: 88%;
   height: 400px;
@@ -44,6 +46,8 @@
   }
 }
 .faq__container {
+  position: relative;
+  z-index: 2;
   max-width: 1510px;
   @media (max-width: 576px) {
     padding-right: 10px;
@@ -141,6 +145,7 @@
   transform: translateY(-50%) rotate(90deg);
 }
 .faq-card__question {
+  font-family: $ff-main;
   font-size: 48px;
   font-weight: 700;
   color: #000000;
@@ -157,10 +162,12 @@
 .faq-card__bottom {
   padding: 7px var(--padding-horizontal);
   padding-bottom: 40px;
+  font-family: $ff-main;
 }
 
 .faq-card__bottom h4 {
   margin-bottom: 19px;
+  font-family: $ff-main;
   font-size: 48px;
   color: #000000;
   @media (max-width: 1920px) {
@@ -190,6 +197,9 @@
   position: absolute;
   left: -15px;
   content: "●";
+  @media (min-width: 1920px) {
+    left: -25px;
+  }
 }
 
 .bayan--opened .faq-card__top::after {
